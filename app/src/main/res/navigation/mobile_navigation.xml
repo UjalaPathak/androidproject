@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_profile"
+    >
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myapplication.Fragment.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_reservation"
+        android:name="com.example.myapplication.Fragment.ReservationFragment"
+        android:label="@string/menu_reservation"
+        tools:layout="@layout/fragment_reservation" />
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.example.myapplication.Fragment.OtherUsersFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/fragment_other_users" />
+    <fragment
+        android:id="@+id/changemailFragment"
+        android:name="com.example.myapplication.Fragment.changemailFragment"
+        android:label="Change email"
+        tools:layout="@layout/fragment_changemail" />
+    <fragment
+        android:id="@+id/loginHistoryFragment"
+        android:name="com.example.myapplication.Fragment.LoginHistoryFragment"
+        android:label="@string/login_history"
+        tools:layout="@layout/fragment_login_history" />
+    <fragment
+        android:id="@+id/logOutFragment"
+        android:name="com.example.myapplication.Fragment.LogOutFragment"
+        android:label="@string/log_out"
+        tools:layout="@layout/fragment_log_out" />
+    <fragment
+        android:id="@+id/deleteMyAccountragment"
+        android:name="com.example.myapplication.Fragment.DeleteMyAccountragment"
+        android:label="@string/delete_account"
+        tools:layout="@layout/fragment_delete_my_accountragment" />
+</navigation>
